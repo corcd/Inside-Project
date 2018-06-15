@@ -13,12 +13,12 @@
 #include "touch.h"
 #include "hanzi.h"
 
-u8 map[20][20] = {0};
-u8 side = 0;
-u8 mode = -1;
-u8 ch_s = 0;
-u8 x = -1;
-u8 y = -1;
+u8 map[20][20] = {0}; //棋谱 Map
+u8 side = 0;		  //当前执子的颜色
+u8 mode = -1;		  //游戏模式
+u16 ch_s = 0;		  //开局选择的颜色
+u16 x = -1;			  //预定义坐标x
+u16 y = -1;			  //预定义坐标y
 
 void app_init()
 {
@@ -81,12 +81,69 @@ void app_init()
 //*************************************************
 //	                   游戏模块
 //*************************************************
+void FillCircle(u16 x0, u16 y0, u16 r, u16 color)
+{
+	int x, y;
+	int deltax, deltay;
+	int d;
+	int xi;
+	x = 0;
+	y = r;
+	deltax = 3;
+	deltay = 2 - r - r;
+	d = 1 - r;
+
+	LCD_DrawPoint(x + x0, y + y0, color);
+	LCD_DrawPoint(x + x0, -y + y0, color);
+	for (xi = -r + x0; xi <= r + x0; xi++)
+		LCD_DrawPoint(xi, y0, color); //水平线填充
+	while (x < y)
+	{
+		if (d < 0)
+		{
+			d += deltax;
+			deltax += 2;
+			x++;
+		}
+		else
+		{
+			d += (deltax + deltay);
+			deltax += 2;
+			deltay += 2;
+			x++;
+			y--;
+		}
+		for (xi = -x + x0; xi <= x + x0; xi++)
+		{
+			LCD_DrawPoint(xi, -y + y0, color);
+			LCD_DrawPoint(xi, y + y0, color); //扫描线填充
+		}
+		for (xi = -y + x0; xi <= y + x0; xi++)
+		{
+			LCD_DrawPoint(xi, -x + y0, color);
+			LCD_DrawPoint(xi, x + y0, color); //扫描线填充其量
+		}
+	}
+}
+
 void DrawSide(u8 side)
 {
 	//画下棋方颜色
+	if (side == 1) // 黑
+	{
+		FillCircle(30, 300, 5, BLACK);
+	}
+	else if (side == 2) //白
+	{
+		FillCircle(30, 300, 5, WHITE);
+	}
+	else
+	{
+		continue;
+	}
 }
 
-void DrawChess(u8 side, u8 mode, u8 ch_s) //choosed_side 默认0，黑棋1，白棋2
+void DrawChess(u8 side, u8 mode, u8 ch_s) //ch_s默认0，黑棋1，白棋2
 {
 	switch (mode)
 	{
@@ -106,9 +163,11 @@ void DrawChess(u8 side, u8 mode, u8 ch_s) //choosed_side 默认0，黑棋1，白
 						//画棋子
 						if (side == 1) // 黑
 						{
+							FillCircle(tp_dev.x[0], tp_dev.y[0], 2.5, BLACK);
 						}
 						else if (side == 2) //白
 						{
+							FillCircle(tp_dev.x[0], tp_dev.y[0], 2.5, WHITE);
 						}
 						else
 						{
@@ -135,10 +194,15 @@ void DrawChess(u8 side, u8 mode, u8 ch_s) //choosed_side 默认0，黑棋1，白
 					{
 						if (tp_dev.x[0] > 50 && tp_dev.y[0] > 150 && tp_dev.x[0] < (lcddev.width - 50) && tp_dev.y[0] < 190)
 						{
-							x = ;
-							y = ;
 							//画棋子
-
+							if (side == 1) // 黑
+							{
+								FillCircle(tp_dev.x[0], tp_dev.y[0], 2.5, BLACK);
+							}
+							else if (side == 2) //白
+							{
+								FillCircle(tp_dev.x[0], tp_dev.y[0], 2.5, WHITE);
+							}
 							PutChess(map, side, x, y);
 						}
 					}
@@ -150,7 +214,15 @@ void DrawChess(u8 side, u8 mode, u8 ch_s) //choosed_side 默认0，黑棋1，白
 			{
 				//等待数据传入
 
-				PutChess(map, side, x, y);
+				if (side == 1) // 黑
+				{
+					FillCircle(get_x, get_y, 2.5, BLACK);
+				}
+				else if (side == 2) //白
+				{
+					FillCircle(get_x, get_y, 2.5, WHITE);
+				}
+				PutChess(map, side, get_x, get_y);
 			}
 		}
 		break;
@@ -347,7 +419,8 @@ void game_net()
 void game_help()
 {
 	LCD_Clear(WHITE);
-	while(1){
+	while (1)
+	{
 		//显示帮助
 		app_init();
 	}
@@ -356,7 +429,8 @@ void game_help()
 void game_settings()
 {
 	LCD_Clear(WHITE);
-	while(1){
+	while (1)
+	{
 		//显示设置
 		app_init();
 	}
