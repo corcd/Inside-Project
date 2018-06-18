@@ -2,6 +2,9 @@
 //  Created by 梦想家泽 on 2018/6/12.
 //  Copyright ? 2018年 whzcorcd. All rights reserved.
 //
+#include <stdio.h>
+#include <stdlib.h>
+#include <memory.h>
 #include "hanzi.h"
 #include "led.h"
 #include "delay.h"
@@ -51,7 +54,7 @@ void app_init()
 
 	LCD_Clear(BLACK);
 	enable = 1;
-	map[20][20] = {0};
+	memset(map,0,sizeof(u8)*20*20);
 	side = 0;
 	mode = -1;
 	x = -1;
