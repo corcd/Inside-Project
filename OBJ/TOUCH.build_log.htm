@@ -3,91 +3,233 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¶ÃVision V5.14.0.0
-Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Hunker AA, Zhi, LIC=NQQGK-Z0DFV-111PY-IYR4L-Q16VW-LRP24
+IDE-Version: ¶ÃVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: lyb Microsoft, Microsoft, LIC=14HY8-367HX-QDFKD-8FIM7-BCKLK-F5JB4
  
 Tool Versions:
-Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
-Toolchain Path:  D:\Program Files\keiluv5\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.05 update 1 (build 106)
-Assembler:       Armasm.exe V5.05 update 1 (build 106)
-Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
-Library Manager: ArmAr.exe V5.05 update 1 (build 106)
-Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
-CPU DLL:         SARMCM3.DLL V5.14.0.0
+Toolchain:       MDK-ARM Standard  Version: 5.18
+Toolchain Path:  D:\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
 Dialog DLL:      DARMSTM.DLL V1.65.0.0
-Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.14.0_KEIL
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
 Dialog DLL:      TARMSTM.DLL V1.64.0.0
  
 <h2>Project:</h2>
-C:\Users\AA\Desktop\touchpad\USER\TOUCH.uvprojx
-Project File Date:  06/14/2018
+C:\Users\LYB\Desktop\Inside-Project-master (1)\Inside-Project-master\USER\TOUCH.uvprojx
+Project File Date:  06/19/2018
 
 <h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\ARM\ARMCC\Bin'
 Build target 'TOUCH'
 compiling main.c...
-hanzi.h(6): warning:  #375-D: declaration requires a typedef name
+hanzi.h(9): warning:  #375-D: declaration requires a typedef name
   };
-hanzi.h(234): warning:  #1-D: last line of file ends without a newline
-  // ÷–π˙
-main.c(144): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_24[0].Msk,5+5,50,2,RED);   
-main.c(145): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_24[1].Msk,50+5,50,2,RED);
-main.c(146): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_24[2].Msk,95+5,50,2,RED);
-main.c(147): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_24[3].Msk,140+5,50,2,RED);
-main.c(148): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_24[4].Msk,185+5,50,2,RED);
-main.c(150): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_lianxi[0].Msk,55+5,150,1,WHITE);   
-main.c(151): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_lianxi[1].Msk,88+5,150,1,WHITE);
-main.c(152): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_lianxi[2].Msk,121+5,150,1,WHITE);
-main.c(153): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_lianxi[3].Msk,155+5,150,1,WHITE);
-main.c(155): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_bisai[0].Msk,55+5,190,1,WHITE);    
-main.c(156): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_bisai[1].Msk,88+5,190,1,WHITE);
-main.c(157): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_bisai[2].Msk,121+5,190,1,WHITE);
-main.c(158): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_bisai[3].Msk,155+5,190,1,WHITE);
-main.c(160): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_lianji[0].Msk,55+5,230,1,WHITE);   
-main.c(161): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_lianji[1].Msk,88+5,230,1,WHITE);
-main.c(162): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_lianji[2].Msk,121+5,230,1,WHITE);
-main.c(163): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_lianji[3].Msk,155+5,230,1,WHITE);
-main.c(165): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_bangzhu[0].Msk,55+5,270,1,WHITE);  
-main.c(166): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_bangzhu[1].Msk,88+5,270,1,WHITE);
-main.c(167): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_bangzhu[2].Msk,121+5,270,1,WHITE);
-main.c(168): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
-        fWriteHz24(GB_bangzhu[3].Msk,155+5,270,1,WHITE);
-main.c(175): warning:  #550-D: variable "key" was set but never used
-        u8 key;
-main.c(176): warning:  #177-D: variable "i" was declared but never referenced
-        u8 i=0;   
-main.c: 25 warnings, 0 errors
+main.c(19): warning:  #1295-D: Deprecated declaration app_init - give arg types
+  void app_init();
+main.c(20): warning:  #1295-D: Deprecated declaration game_help - give arg types
+  void game_help();
+main.c(21): warning:  #1295-D: Deprecated declaration game_single - give arg types
+  void game_single();
+main.c(22): warning:  #1295-D: Deprecated declaration game_net - give arg types
+  void game_net();
+main.c(23): warning:  #1295-D: Deprecated declaration game_settings - give arg types
+  void game_settings();
+main.c(33): warning:  #1295-D: Deprecated declaration win - give arg types
+  int win();
+main.c(37): warning:  #1295-D: Deprecated declaration DrawChessboard - give arg types
+  void DrawChessboard();
+main.c(38): warning:  #1295-D: Deprecated declaration DrawWin - give arg types
+  void DrawWin();
+main.c(39): warning:  #1295-D: Deprecated declaration DrawFailed - give arg types
+  void DrawFailed();
+main.c(46): warning:  #68-D: integer conversion resulted in a change of sign
+  u8 mode = -1;		  //Ê∏?Êà?Ê®?Âº?
+main.c(48): warning:  #68-D: integer conversion resulted in a change of sign
+  u16 x = -1;			  //È¢?ÂÆ?‰π?Âù?Ê†?x
+main.c(49): warning:  #68-D: integer conversion resulted in a change of sign
+  u16 y = -1;			  //È¢?ÂÆ?‰π?Âù?Ê†?y
+main.c(81): warning:  #68-D: integer conversion resulted in a change of sign
+  	mode = -1;
+main.c(82): warning:  #68-D: integer conversion resulted in a change of sign
+  	x = -1;
+main.c(83): warning:  #68-D: integer conversion resulted in a change of sign
+  	y = -1;
+main.c(89): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[0].Msk, 50, 30, 2, 
+ED);
+main.c(90): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[1].Msk, 100, 30, 2, 
+ED);
+main.c(91): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[2].Msk, 150, 30, 2, 
+ED);
+main.c(93): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[3].Msk, 65, 120, 1, 
+BLUE);
+main.c(94): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[4].Msk, 95, 120, 1, 
+BLUE);
+main.c(95): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[5].Msk, 125, 120, 1, 
+BLUE);
+main.c(96): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[6].Msk, 155, 120, 1, 
+BLUE);
+main.c(98): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[7].Msk, 65, 160, 1, 
+BLUE);
+main.c(99): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[8].Msk, 95, 160, 1, 
+BLUE);
+main.c(100): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[9].Msk, 125, 160, 1, 
+BLUE);
+main.c(101): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[10].Msk, 155, 160, 1, 
+BLUE);
+main.c(103): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[11].Msk, 65, 200, 1, 
+BLUE);
+main.c(104): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[12].Msk, 95, 200, 1, 
+BLUE);
+main.c(105): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[13].Msk, 125, 200, 1, 
+BLUE);
+main.c(106): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[14].Msk, 155, 200, 1, 
+BLUE);
+main.c(108): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[15].Msk, 65, 240, 1, 
+BLUE);
+main.c(109): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[16].Msk, 95, 240, 1, 
+BLUE);
+main.c(110): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[17].Msk, 125, 240, 1, 
+BLUE);
+main.c(111): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[18].Msk, 155, 240, 1, 
+BLUE);
+main.c(75): warning:  #550-D: variable "key" was set but never used
+  	u8 key;
+main.c(76): warning:  #177-D: variable "i" was declared but never referenced
+  	u8 i = 0;
+main.c(155): warning:  #550-D: variable "type" was set but never used
+  		u16 type;
+main.c(185): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[35].Msk, 20,280, 1, 
+HITE);
+main.c(186): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+    fWriteHz24(GB_24[36].Msk, 40,280, 1, 
+HITE);
+main.c(187): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[37].Msk, 60,280, 1, 
+HITE);
+main.c(190): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[26].Msk, 180,280, 1, 
+HITE);//ËÆ?Ëæ?
+main.c(191): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[27].Msk, 200,280, 1, 
+HITE);
+main.c(299): warning:  #177-D: variable "t" was declared but never referenced
+  	short t = 999;
+main.c(300): warning:  #177-D: variable "pStr" was declared but never referenced
+  	char *pStr;
+main.c(301): warning:  #177-D: variable "gStr" was declared but never referenced
+  	char *gStr;
+main.c(500): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		fWriteHz24(GB_24[28].Msk, 70,140, 1, 
+ED);
+main.c(501): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      fWriteHz24(GB_24[29].Msk, 100,140, 1, 
+ED);
+main.c(502): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	  fWriteHz24(GB_24[22].Msk, 130,140, 1, 
+ED);
+main.c(503): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      fWriteHz24(GB_24[23].Msk, 160,140, 1, 
+ED);
+main.c(523): warning:  #111-D: statement is unreachable
+  		app_init();
+main.c(532): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		fWriteHz24(GB_24[30].Msk, 70,140, 1, 
+ED);
+main.c(533): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      fWriteHz24(GB_24[29].Msk, 100,140, 1, 
+ED);
+main.c(534): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	  fWriteHz24(GB_24[22].Msk, 130,140, 1, 
+ED);
+main.c(535): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      fWriteHz24(GB_24[23].Msk, 160,140, 1, 
+ED);
+main.c(611): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		fWriteHz24(GB_24[11].Msk, 65, 100, 1.5, 
+ED);
+main.c(612): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		fWriteHz24(GB_24[12].Msk, 95, 100, 1.5, 
+ED);
+main.c(613): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		fWriteHz24(GB_24[13].Msk, 125, 100, 1.5, 
+ED);
+main.c(614): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  		fWriteHz24(GB_24[14].Msk, 155, 100, 1.5, 
+ED);
+main.c(639): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[33].Msk, 65, 160, 1, 
+BLUE);
+main.c(640): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[34].Msk, 95, 160, 1, 
+BLUE);
+main.c(641): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[5].Msk, 125, 160, 1, 
+BLUE);
+main.c(642): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[6].Msk, 155, 160, 1, 
+BLUE);
+main.c(644): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[31].Msk, 65, 200, 1, 
+BLUE);
+main.c(645): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[32].Msk, 95, 200, 1, 
+BLUE);
+main.c(646): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[5].Msk, 125, 200, 1, 
+BLUE);
+main.c(647): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[6].Msk, 155, 200, 1, 
+BLUE);
+main.c(649): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[38].Msk, 65, 240, 1, 
+BLUE);
+main.c(650): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[39].Msk, 95, 240, 1, 
+BLUE);
+main.c(651): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[40].Msk, 125, 240, 1, 
+BLUE);
+main.c(652): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+  	fWriteHz24(GB_24[41].Msk, 155, 240, 1, 
+BLUE);
+main.c: 71 warnings, 0 errors
 linking...
-Program Size: Code=40098 RO-data=6802 RW-data=2904 ZI-data=1848  
+Program Size: Code=43006 RO-data=6802 RW-data=3368 ZI-data=2072  
 FromELF: creating hex file...
-"..\OBJ\TOUCH.axf" - 0 Error(s), 25 Warning(s).
+"..\OBJ\TOUCH.axf" - 0 Error(s), 71 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\AA\Desktop\touchpad\USER\RTE
-  D:\Program Files\keiluv5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+  C:\Users\LYB\Desktop\Inside-Project-master (1)\Inside-Project-master\USER\RTE
+  D:\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

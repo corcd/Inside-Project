@@ -3,7 +3,7 @@
 ..\obj\ctiic.o: ..\SYSTEM\sys\sys.h
 ..\obj\ctiic.o: ..\USER\stm32f10x.h
 ..\obj\ctiic.o: ..\CORE\core_cm3.h
-..\obj\ctiic.o: D:\Program Files\keiluv5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\ctiic.o: D:\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\ctiic.o: ..\USER\system_stm32f10x.h
 ..\obj\ctiic.o: ..\USER\stm32f10x_conf.h
 ..\obj\ctiic.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

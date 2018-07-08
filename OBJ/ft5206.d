@@ -3,7 +3,7 @@
 ..\obj\ft5206.o: ..\SYSTEM\sys\sys.h
 ..\obj\ft5206.o: ..\USER\stm32f10x.h
 ..\obj\ft5206.o: ..\CORE\core_cm3.h
-..\obj\ft5206.o: D:\Program Files\keiluv5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\ft5206.o: D:\ARM\ARMCC\Bin\..\include\stdint.h
 ..\obj\ft5206.o: ..\USER\system_stm32f10x.h
 ..\obj\ft5206.o: ..\USER\stm32f10x_conf.h
 ..\obj\ft5206.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -35,6 +35,6 @@
 ..\obj\ft5206.o: ..\HARDWARE\TOUCH\gt9147.h
 ..\obj\ft5206.o: ..\HARDWARE\TOUCH\ctiic.h
 ..\obj\ft5206.o: ..\SYSTEM\usart\usart.h
-..\obj\ft5206.o: D:\Program Files\keiluv5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\ft5206.o: D:\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\ft5206.o: ..\SYSTEM\delay\delay.h
-..\obj\ft5206.o: D:\Program Files\keiluv5\ARM\ARMCC\Bin\..\include\string.h
+..\obj\ft5206.o: D:\ARM\ARMCC\Bin\..\include\string.h
